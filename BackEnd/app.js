@@ -3,9 +3,9 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require("cors");
 
-const Book = require("./models/Book.js");
-const Author = require("./models/Author.js");
-const Genre = require("./models/Genre.js");
+const Book = require("./BackEnd/models/Book.js");
+const Author = require("./BackEnd/models/Author.js");
+const Genre = require("./BackEnd/models/Genre.js");
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
